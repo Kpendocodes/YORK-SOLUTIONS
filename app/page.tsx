@@ -140,6 +140,7 @@ export default function Home() {
               Service
               <select name="service" required>
                 <option>Window & door sealing</option>
+                <option>Driveway sealing</option>
                 <option>Roof flashing & repair</option>
                 <option>Commercial caulking</option>
                 <option>Inspection & maintenance</option>
