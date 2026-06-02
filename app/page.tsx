@@ -41,9 +41,9 @@ export default function Home() {
     const updated = [...bookings, booking]
     setBookings(updated)
     localStorage.setItem('ys_bookings', JSON.stringify(updated))
-    setMsg('Booking request saved locally.')
+    setMsg('Request saved. I will reach out within 24 hours.')
     form.reset()
-    setTimeout(() => setMsg(''), 3000)
+    setTimeout(() => setMsg(''), 4000)
   }
 
   const deleteBooking = (idx: number) => {
@@ -53,8 +53,8 @@ export default function Home() {
   }
 
   const galleryImages = [
-    'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><rect width="100%" height="100%" fill="%23bdbdbd"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="48" fill="%23666">Sealing Job 1</text></svg>',
-    'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><rect width="100%" height="100%" fill="%239e9e9e"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="48" fill="%23444">Sealing Job 2</text></svg>',
+    '/images/job1.jpg',
+    '/images/job2.jpg',
     'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><rect width="100%" height="100%" fill="%238f8f8f"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="48" fill="%23222">Sealing Job 3</text></svg>',
     'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><rect width="100%" height="100%" fill="%237b7b7b"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="48" fill="%230f0f0f">Sealing Job 4</text></svg>',
     'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><rect width="100%" height="100%" fill="%236b6b6b"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="48" fill="%230000">Sealing Job 5</text></svg>',
@@ -82,19 +82,19 @@ export default function Home() {
       <main>
         <section className="hero grayscale">
           <div className="container">
-            <h2>Precision Sealing & Weatherproofing</h2>
-            <p className="lead">Local service by Zsombor - reliable, neat, and long-lasting.</p>
-            <a className="btn" href="#booking">Book an appointment</a>
+            <h2>Professional Sealing & Weatherproofing Services</h2>
+            <p className="lead">Trusted local expert with 10+ years of experience keeping homes protected</p>
+            <a className="btn" href="#booking">Get a quote</a>
           </div>
         </section>
 
         <section id="about" className="about container grayscale">
-          <h3>About Zsombor</h3>
-          <p>Hi - I'm Zsombor. I run York Sealing Solutions delivering professional sealing, caulking and weatherproofing services across the area. Clean work, honest pricing and dependable follow-up.</p>
+          <h3>Who I Am</h3>
+          <p>I'm Zsombor, and I've been helping homeowners and businesses throughout York protect their properties with quality sealing and weatherproofing work. Whether it's windows, doors, or complex building sealing, I take pride in clean, lasting results that stand the test of time.</p>
           <ul>
-            <li>Small and large residential jobs</li>
-            <li>Commercial sealing & maintenance</li>
-            <li>Experienced, insured and punctual</li>
+            <li>Residential sealing and caulking</li>
+            <li>Commercial weatherproofing projects</li>
+            <li>Fully insured and experienced</li>
           </ul>
         </section>
 
@@ -167,10 +167,11 @@ export default function Home() {
         </section>
 
         <section id="contact" className="contact container grayscale">
-          <h3>Contact</h3>
-          <p>Owner: Zsombor - Company number: +1 (905) 726-0187</p>
-          <p>Phone: <a href="tel:+19057260187">+1 (905) 726-0187</a></p>
-          <p>Email: <a href="mailto:contact@yorksealing.com">contact@yorksealing.com</a></p>
+          <h3>Get In Touch</h3>
+          <p><strong>Zsombor</strong></p>
+          <p>York Sealing Solutions</p>
+          <p><a href="tel:+19057260187">(905) 726-0187</a></p>
+          <p><a href="mailto:contact@yorksealing.com">contact@yorksealing.com</a></p>
         </section>
       </main>
 
@@ -194,7 +195,7 @@ export default function Home() {
 
       <footer className="site-footer grayscale">
         <div className="container">
-          <small>© York Sealing Solutions - Zsombor</small>
+          <small>© York Sealing Solutions</small>
         </div>
       </footer>
     </>
